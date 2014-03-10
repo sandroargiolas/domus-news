@@ -6,7 +6,7 @@
         version     = "1.0" >
 
 
-    <name>PhoneGap Example</name>
+    <name>Domus News</name>
 
     <description>
        	A simple app to search and read local news from a web site
