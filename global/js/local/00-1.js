@@ -1,6 +1,6 @@
 ﻿var SndNS = SndNS || {};
 var DomusNS = {};
-function DomusNS.onDeviceReady() {
+DomusNS.onDeviceReady = function () {
 	console.log("onDeviceReady");
 	jQuery.support.cors = true;
 	SndNS.writeNewVersion = false;
@@ -43,7 +43,7 @@ function DomusNS.onDeviceReady() {
 	// Domus end ***********************************************
 	SndNS.checkConnection();
 	//$.mobile.changePage("#splash");
-}
+};
 document.addEventListener("deviceready", DomusNS.onDeviceReady, false);
 SndNS.exitFromApp = function (buttonIndex) {
 	navigator.app.exitApp();
