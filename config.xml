@@ -34,6 +34,6 @@
 <icon src="global/img/android/xhdpi.png" gap:platform="android" gap:density="xhdpi" />96
 
 <!-- winphone icons -->
-<icon src="icons/winphone/icon.png" gap:platform="winphone" />
-<icon src="icons/winphone/tileicon.png" gap:platform="winphone" gap:role="background" />	
+<icon src="global/img/winphone/icon.png" gap:platform="winphone" />
+<icon src="global/img/winphone/tileicon.png" gap:platform="winphone" gap:role="background" />	
 </widget>
