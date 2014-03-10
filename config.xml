@@ -14,12 +14,11 @@
     <author href="https://www.sandroargiolas.it" email="sandroargiolas@tiscali.it">
 	Sandro Argiolas
     </author>
-	
-</widget>
-<gap:platform name="ios" />
-<gap:platform name="android" />
-<gap:platform name="winphone" />
-
+<gap:platforms>
+	<gap:platform name="ios" />
+	<gap:platform name="android" />
+	<gap:platform name="winphone" />
+</gap:platforms>
 <!-- general icon -->
 <icon src="icon.png" />
 
@@ -36,5 +35,5 @@
 
 <!-- winphone icons -->
 <icon src="icons/winphone/icon.png" gap:platform="winphone" />
-<icon src="icons/winphone/tileicon.png" gap:platform="winphone" gap:role="background" />
-</xml>
+<icon src="icons/winphone/tileicon.png" gap:platform="winphone" gap:role="background" />	
+</widget>
