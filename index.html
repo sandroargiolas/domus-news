@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+		<link rel="stylesheet" href="./global/js/plugins/jquery/jquery.mobile-1.4.0.css" />
+		<link rel="stylesheet" href="./global/js/plugins/jquery/jquery.mobile.panel.css" />
+		<link rel="stylesheet" href="./global/js/plugins/jquery/theme-classic.css" />
+		<link rel="stylesheet" href="./global/css/essea-main.css" />
+		<link rel="stylesheet" href="./global/css/essea-dialogs.css" />
+		<link rel="stylesheet" href="./global/css/essea-popup.css" />
+		<link rel="stylesheet" href="./global/css/essea-listview.css" />
+		<script type="text/javascript" src="./global/js/plugins/cordova-2.5.0.js"></script>
+        <script type="text/javascript" src="./global/js/plugins/jquery/jquery-1.11.0.js"></script>
+		<script type="text/javascript" src="./global/js/plugins/jquery/jquery.mobile-1.4.0.js"></script>
+		<script type="text/javascript" src="./global/js/plugins/jquery.nicescroll.3.5.4.min.js" ></script>	
+		<!-- local start -->
+		<script type="text/javascript" src="./global/js/local/00-1.js"></script>
+		<!--<script type="text/javascript" src="./global/js/local/clear/01-0-initapp.js"></script>
+		<script type="text/javascript" src="./global/js/local/clear/02-0-global.js"></script>
+		<script type="text/javascript" src="./global/js/local/clear/03-0-essea-dialogs.js"></script>
+		<script type="text/javascript" src="./global/js/local/clear/04-0-essea-utility.js"></script>
+		<script type="text/javascript" src="./global/js/local/clear/05-0-domus-classes.js"></script>
+		<script type="text/javascript" src="./global/js/local/clear/50-0-cycle.js"></script>-->
+		<!-- local end-->
+		<!-- datebox start -->
+		<link type="text/css" href="./global/js/plugins/datebox/jqm-datebox.min.css" rel="stylesheet" /> 
+		<script type="text/javascript" src="./global/js/plugins/datebox/datebox-complete-1.1.0.js"></script> 
+		<!-- datebox end -->
+        <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1, user-scalable=no" />
+        <title></title>
+    </head>
+    <body id="body">
+    	<div id="splash" data-role="page" data-cache="false" style="background-color: Black; width: 100%; text-align: center; ">
+			<script type="text/javascript">
+				$(document).delegate("#splash", 'pageshow', function (event, data) {
+					$("#splash").height(screen.height);
+					var imgHeight = 624;
+					var imgWidth = 437;
+					var imgWidthResized = screen.width * 0.9;
+					var imgHeightResized = imgWidthResized * imgHeight / imgWidth;
+					var marginTop = (screen.height - imgHeightResized) / 2;
+					$("#splash").append("<img src='global/img/splash.png' width='90%' style='margin-top: " + Math.floor(marginTop) + "px;' />");
+				});
+			</script>
+		</div>
+	</body>
+</html>
