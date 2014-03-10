@@ -26,10 +26,10 @@
 	<icon src="global/img/ios/icon_at_2x.png" gap:platform="ios" width="114" height="114" />
 
 	<!-- android icons -->
-	<icon src="global/img/android/ldpi.png" gap:platform="android" gap:density="ldpi" />36
-	<icon src="global/img/android/mdpi.png" gap:platform="android" gap:density="mdpi" />48
-	<icon src="global/img/android/hdpi.png" gap:platform="android" gap:density="hdpi" />72
-	<icon src="global/img/android/xhdpi.png" gap:platform="android" gap:density="xhdpi" />96
+	<icon src="global/img/android/ldpi.png" gap:platform="android" gap:density="ldpi" />
+	<icon src="global/img/android/mdpi.png" gap:platform="android" gap:density="mdpi" />
+	<icon src="global/img/android/hdpi.png" gap:platform="android" gap:density="hdpi" />
+	<icon src="global/img/android/xhdpi.png" gap:platform="android" gap:density="xhdpi" />
 
 	<!-- winphone icons -->
 	<icon src="global/img/winphone/icon.png" gap:platform="winphone" />
@@ -38,7 +38,8 @@
 	<!-- plugins -->
 	<gap:plugin name="Device" value="org.apache.cordova.core.Device"/>
 	<gap:plugin name="NetworkStatus" value="org.apache.cordova.core.NetworkManager" />
-	<gap:plugin name="Vibration" value="org.apache.cordova.core.Vibration" />
+	<gap:plugin name="org.apache.cordova.dialogs" />
+	<gap:plugin name="org.apache.cordova.vibration" />
 	<gap:plugin name="SplashScreen" value="org.apache.cordova.core.SplashScreen" />
 </widget>
 
