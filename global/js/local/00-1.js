@@ -1,7 +1,6 @@
 ﻿var SndNS = SndNS || {};
 var DomusNS = {};
 DomusNS.onDeviceReady = function () {
-	console.log("onDeviceReady");
 	jQuery.support.cors = true;
 	SndNS.writeNewVersion = false;
 	SndNS.Timeout = 6000;
@@ -77,6 +76,7 @@ SndNS.checkConnection = function () {
 	//	alert('Connection type: ' + states[networkState]);
 };
 SndNS.checkNewVersion = function () {
+	console.log("checkNewVersion: " + "http://" + SndNS.pathMobileServices + SndNS.checkVersionService);
 	$.ajax({
 		beforeSend: function () { esseadialogsNS.ShowPageLoadingMsg(); },
 		complete: function () { $.mobile.loading('hide'); },
@@ -94,8 +94,8 @@ SndNS.checkNewVersion = function () {
 		},
 		timeout: SndNS.Timeout,
 		error: function (jqXHR, textStatus, errorThrown) {
-			SndNS.readVersion();
-			//esseadialogsNS.ShowDialog({ header: "Errore", body: "Nessuna risposta dal sito di aggiornamento" });
+			console.log("checkNewVersion: " + textStatus + " - " + errorThrown);
+			esseadialogsNS.ShowDialog({ header: "Errore", body: "Nessuna risposta dal sito di aggiornamento" });
 		}
 	});
 };
