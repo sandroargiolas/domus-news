@@ -5,36 +5,41 @@
         versionCode = "1.0" 
         version     = "1.0" >
 
+	<name>Domus News</name>
+	<description>
+       		A simple app to search and read local news from a web site
+	</description>
+	<author href="https://www.sandroargiolas.it" email="sandroargiolas@tiscali.it">
+		Sandro Argiolas
+	</author>
+	<gap:platforms>
+		<gap:platform name="ios" />
+		<gap:platform name="android" />
+		<gap:platform name="winphone" />
+	</gap:platforms>
+	<!-- general icon -->
+	<icon src="icon.png" />
 
-    <name>Domus News</name>
+	<!-- iOS icons -->
+	<icon src="global/img/ios/icon.png" gap:platform="ios" width="57" height="57" />
+	<icon src="global/img/ios/icon-72.png" gap:platform="ios" width="72" height="72" />
+	<icon src="global/img/ios/icon_at_2x.png" gap:platform="ios" width="114" height="114" />
 
-    <description>
-       	A simple app to search and read local news from a web site
-    </description>
+	<!-- android icons -->
+	<icon src="global/img/android/ldpi.png" gap:platform="android" gap:density="ldpi" />36
+	<icon src="global/img/android/mdpi.png" gap:platform="android" gap:density="mdpi" />48
+	<icon src="global/img/android/hdpi.png" gap:platform="android" gap:density="hdpi" />72
+	<icon src="global/img/android/xhdpi.png" gap:platform="android" gap:density="xhdpi" />96
 
-    <author href="https://www.sandroargiolas.it" email="sandroargiolas@tiscali.it">
-	Sandro Argiolas
-    </author>
-<gap:platforms>
-	<gap:platform name="ios" />
-	<gap:platform name="android" />
-	<gap:platform name="winphone" />
-</gap:platforms>
-<!-- general icon -->
-<icon src="icon.png" />
+	<!-- winphone icons -->
+	<icon src="global/img/winphone/icon.png" gap:platform="winphone" />
+	<icon src="global/img/winphone/tileicon.png" gap:platform="winphone" gap:role="background" />	
 
-<!-- iOS icons -->
-<icon src="global/img/ios/icon.png" gap:platform="ios" width="57" height="57" />
-<icon src="global/img/ios/icon-72.png" gap:platform="ios" width="72" height="72" />
-<icon src="global/img/ios/icon_at_2x.png" gap:platform="ios" width="114" height="114" />
-
-<!-- android icons -->
-<icon src="global/img/android/ldpi.png" gap:platform="android" gap:density="ldpi" />36
-<icon src="global/img/android/mdpi.png" gap:platform="android" gap:density="mdpi" />48
-<icon src="global/img/android/hdpi.png" gap:platform="android" gap:density="hdpi" />72
-<icon src="global/img/android/xhdpi.png" gap:platform="android" gap:density="xhdpi" />96
-
-<!-- winphone icons -->
-<icon src="global/img/winphone/icon.png" gap:platform="winphone" />
-<icon src="global/img/winphone/tileicon.png" gap:platform="winphone" gap:role="background" />	
+	<!-- plugins -->
+	<gap:plugin name="Device" value="org.apache.cordova.core.Device"/>
+	<gap:plugin name="NetworkStatus" value="org.apache.cordova.core.NetworkManager" />
+	<gap:plugin name="Notification" value="org.apache.cordova.core.Notification" />
+	<gap:plugin name="Vibration" value="org.apache.cordova.core.Vibration" />
+	<gap:plugin name="SplashScreen" value="org.apache.cordova.core.SplashScreen" />
 </widget>
+
