@@ -37,3 +37,4 @@
 <!-- winphone icons -->
 <icon src="icons/winphone/icon.png" gap:platform="winphone" />
 <icon src="icons/winphone/tileicon.png" gap:platform="winphone" gap:role="background" />
+</xml>
