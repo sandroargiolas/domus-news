@@ -76,7 +76,7 @@ SndNS.checkConnection = function () {
 	//	alert('Connection type: ' + states[networkState]);
 };
 SndNS.checkNewVersion = function () {
-	console.log("checkNewVersion: " + "http://" + SndNS.pathMobileServices + SndNS.checkVersionService);
+	console.log("checkNewVersion: " + "http://" + SndNS.pathMobileServices + SndNS.checkVersionService + " Connection: " + navigator.connection.type);
 	$.ajax({
 		beforeSend: function () { esseadialogsNS.ShowPageLoadingMsg(); },
 		complete: function () { $.mobile.loading('hide'); },
@@ -95,7 +95,7 @@ SndNS.checkNewVersion = function () {
 		timeout: SndNS.Timeout,
 		error: function (jqXHR, textStatus, errorThrown) {
 			console.log("checkNewVersion: " + textStatus + " - " + errorThrown);
-			esseadialogsNS.ShowDialog({ header: "Errore", body: "Nessuna risposta dal sito di aggiornamento" });
+			esseadialogsNS.ShowDialog({ header: "Errore", body: "Nessuna risposta dal sito" });
 		}
 	});
 };
