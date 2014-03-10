@@ -1,0 +1,36 @@
+/*
+body, .ui-page, .ui-body, .ui-overlay, ui-page-theme, ui-panel-wrapper, a-page-shadow-color {
+	color: #000000;
+	font-size: .9em;
+	text-decoration: none;
+	text-shadow: 0 0 0;
+	padding: 0 0 0 0;	
+	
+}
+a:link, a:visited, a:hover, a:active {
+	text-decoration: none;
+}
+.ui-header, .ui-title, .ui-footer {
+	text-align: center;
+	color: white;
+	font-size: 1.1em;
+}
+.header {
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	color: white;
+	font-size: 1.1em;
+	display: table;
+	background-color: #9dceff;
+}
+.content {
+	background-color: #F8F2E4;
+	background-image: none;
+}
+@media screen and (min-width : 480px) and (orientation:portrait), screen and (min-width : 800px) and (orientation:landscape) {
+	body, .ui-page, .ui-body, .ui-overlay, ui-page-theme, ui-panel-wrapper {
+		
+	}
+}
+*/

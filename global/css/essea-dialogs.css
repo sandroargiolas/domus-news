@@ -1,0 +1,51 @@
+.dialogContainer{
+	min-width: 80%;
+}
+.dialogHeader{
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+	border: 1px solid Gray;
+	padding: 6px 6px 6px 6px;
+	text-align: center;
+	font-size: 1.3em;
+	font-weight: bold;
+	white-space: nowrap;	
+	color: White;
+	background-color: Gray;
+}
+.dialogBody, .dialogBodyFooter{
+	border: 1px solid Gray;
+	padding: 4px 4px 4px 4px;	
+	font-size: 1.1em;
+	color: Black;
+	background-color: #F0F0F0;
+}
+.dialogBodyFooter{
+	border-bottom-left-radius: 8px; 
+	border-bottom-right-radius: 8px;
+}
+.dialogFooter{
+	border-bottom-left-radius: 8px; 
+	border-bottom-right-radius: 8px;
+	border: 1px solid Gray;
+	padding: 6px 6px 6px 6px;
+	text-align: center;
+	font-weight: bold;
+	color: White;
+	background-color: Gray;
+}
+.dialogButton{
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+	border-bottom-left-radius: 8px; 
+	border-bottom-right-radius: 8px;
+	font-size: 1.4em;
+	display: inline-block;
+	border: 1px solid Gray;
+	padding: 4px 4px 4px 4px;
+	text-align: center;
+	min-width: 20%;
+	color: Gray;
+	background-color: #F0F0F0;
+	cursor: pointer;
+}
